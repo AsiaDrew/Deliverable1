@@ -23,9 +23,9 @@ namespace Deliverable1
                 double totalbutterneeded = 2 * userinput;
                 double totaljellyneeded = 4 * userinput;
 
-                double totalloafneeded = Math.Round(totalslicesneeded / slicesperloaf);
-                double totalbutter = Math.Round(totalbutterneeded / jarbutter);
-                double totaljelly = Math.Round(totaljellyneeded / jarjelly);
+                double totalloafneeded = Math.Ceiling(totalslicesneeded / slicesperloaf);
+                double totalbutter = Math.Ceiling(totalbutterneeded / jarbutter);
+                double totaljelly = Math.Ceiling(totaljellyneeded / jarjelly);
 
                 {
                     string message = "You need:";
